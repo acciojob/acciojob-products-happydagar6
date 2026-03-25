@@ -1,65 +1,64 @@
-/* --- 1. LAYOUT LOGIC (Same as before) --- */
+/* --- Wrapper Logic --- */
 #wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
+/* --- Row Logic --- */
 .row {
-  display: flex;
+    display: flex;
 }
 
 .row1 {
-  justify-content: space-between;
-  align-items: center;
+    justify-content: space-between;
+    align-items: center; /* DSA centered vertically */
 }
 
 .row2 {
-  justify-content: center;
+    justify-content: center; /* AccioJob centered horizontally */
 }
 
 .row3 {
-  gap: 10px;
-  align-items: flex-end;
+    gap: 10px;
+    align-items: flex-end; /* Business Analytics hugs bottom */
 }
 
-/* --- 2. COMMON PRODUCT STYLING --- */
+/* --- Product General Style --- */
 .product {
-  color: white;
-  text-align: center;
-  /* Test 18px expect kar raha hai, toh padding control mein rakhenge */
-  padding: 18px 0; 
-  font-family: Arial, sans-serif;
+    display: flex; /* Test expect kar raha hai */
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    padding: 18px 0; /* Test logs mein padding 18px hint thi */
+    box-sizing: border-box;
 }
 
-/* --- 3. COLORS & SPECIFIC SIZES --- */
+/* --- Specific Colors & Dimensions --- */
 #dsa {
-  width: 50%;
-  background-color: #8B0000; /* Reddish */
+    width: 50%;
+    background-color: rgb(139, 0, 0); /* Dark Red */
 }
 
 #mern {
-  width: 30%;
-  height: 75px;
-  background-color: #F28500; /* Yellow/Orange */
-  line-height: 75px; /* Text ko vertically center karne ke liye */
-  padding: 0; 
+    width: 30%;
+    height: 75px;
+    background-color: rgb(243, 127, 27); /* Exact Orange from logs */
 }
 
 #acciojob {
-  width: 75%;
-  background-color: #5C6BC0;
+    width: 75%;
+    background-color: rgb(98, 110, 227); /* Exact Blue from logs */
 }
 
 #buisness-analytics {
   width: 40%;
-  background-color: #16A085
+  background-color: rgb(17, 150, 126); /* Exact Green from logs */
 }
 
 #spring {
   flex-grow: 1;
   height: 75px;
-  background-color: #E91E63;
-  line-height: 75px; /* Vertical center */
-  padding: 0;
+  background-color: rgb(233, 30, 99); /* Spring Pink */
 }
