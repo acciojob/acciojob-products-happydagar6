@@ -1,1 +1,63 @@
 /*  your css code here. If applicable */
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.row {
+	display: flex;
+}
+
+.row1 {
+	justify-content: space-between;
+	align-items: center;
+}
+
+.dsa {
+	width: 50%;
+}
+
+.mern {
+	width: 30%;
+	height: 75px;
+}
+
+.row2{
+	justify-content: center;
+}
+
+.acciojob {
+	width: 75%;
+}
+
+.row3{
+	gap: 10px;
+	align-items: flex-end;
+}
+
+.business {
+	width: 40%;
+}
+
+.spring {
+	flex-grow: 1;
+	height: 75px;
+}
+
+.product {
+	color: white;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 15px 0;
+}
+
+.dsa { background-color: #8B0000; }
+.mern { background-color: #F28500; }
+.acciojob { background-color: #5C6BC0; }
+.business { background-color: #16A085; }
+.spring { background-color: #E91E63; }
+
+.mern, .spring { padding: 0; }
