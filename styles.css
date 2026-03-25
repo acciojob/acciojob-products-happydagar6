@@ -1,63 +1,65 @@
-/*  your css code here. If applicable */
-.container {
-	display: flex;
-	flex-direction: column;
-	gap: 24px;
+/* --- 1. LAYOUT LOGIC (Same as before) --- */
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .row {
-	display: flex;
+  display: flex;
 }
 
 .row1 {
-	justify-content: space-between;
-	align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.dsa {
-	width: 50%;
+.row2 {
+  justify-content: center;
 }
 
-.mern {
-	width: 30%;
-	height: 75px;
+.row3 {
+  gap: 10px;
+  align-items: flex-end;
 }
 
-.row2{
-	justify-content: center;
-}
-
-.acciojob {
-	width: 75%;
-}
-
-.row3{
-	gap: 10px;
-	align-items: flex-end;
-}
-
-.business {
-	width: 40%;
-}
-
-.spring {
-	flex-grow: 1;
-	height: 75px;
-}
-
+/* --- 2. COMMON PRODUCT STYLING --- */
 .product {
-	color: white;
-	font-weight: bold;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 15px 0;
+  color: white;
+  text-align: center;
+  /* Test 18px expect kar raha hai, toh padding control mein rakhenge */
+  padding: 18px 0; 
+  font-family: Arial, sans-serif;
 }
 
-.dsa { background-color: #8B0000; }
-.mern { background-color: #F28500; }
-.acciojob { background-color: #5C6BC0; }
-.business { background-color: #16A085; }
-.spring { background-color: #E91E63; }
+/* --- 3. COLORS & SPECIFIC SIZES --- */
+#dsa {
+  width: 50%;
+  background-color: #8B0000; /* Reddish */
+}
 
-.mern, .spring { padding: 0; }
+#mern {
+  width: 30%;
+  height: 75px;
+  background-color: #F28500; /* Yellow/Orange */
+  line-height: 75px; /* Text ko vertically center karne ke liye */
+  padding: 0; 
+}
+
+#acciojob {
+  width: 75%;
+  background-color: #5C6BC0;
+}
+
+#buisness-analytics {
+  width: 40%;
+  background-color: #16A085
+}
+
+#spring {
+  flex-grow: 1;
+  height: 75px;
+  background-color: #E91E63;
+  line-height: 75px; /* Vertical center */
+  padding: 0;
+}
